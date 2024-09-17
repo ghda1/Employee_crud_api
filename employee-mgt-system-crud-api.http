@@ -1,0 +1,6 @@
+@employee_mgt_system_crud_api_HostAddress = http://localhost:5007
+
+GET {{employee_mgt_system_crud_api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

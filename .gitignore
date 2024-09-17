@@ -1,0 +1,143 @@
+# Ignore Visual Studio temporary files, build results, and
+# user-specific files
+
+## Ignore Visual Studio temporary files, build results, and
+## user-specific files
+*.rsuser
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Auto generated files during VS build
+.vscode/
+.vs/
+*.log
+.vscode/*
+.vscode/settings.json
+.vscode/tasks.json
+
+# User-specific files
+*.rsuser
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# User-specific files (Mono Auto Generated)
+mono_crash.*
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Mac System files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# end of the basic setup
+
+# Build Folders
+bin/
+obj/
+out/
+
+# Rider
+.idea/
+
+# Ignore nuget packages
+*.nupkg
+*.snupkg
+# Ignoring Package manager folders
+.vscode/
+.vscode/*
+node_modules/
+
+# DotNetProject and Visual studio debugging
+.vs/
+.vscode/
+
+# Ignore Visual Studio database files
+*.mdf
+*.ldf
+
+# Build Results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]64/
+[Bb]in/
+[Oo]bj/
+
+# Logs
+logs/
+*.log
+*.tlog
+*.vspscc
+
+# Ignore package management directories
+node_modules/
+# Ignore generated code directories
+GeneratedFiles/
+
+# Ignore Test Results
+TestResults/
+*.TestResults/
+
+# Ignore Publish directory
+publish/
+
+# Microsoft Azure Build Output
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Ignore database files
+*.mdf
+*.ldf
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Resharper
+_ReSharper*/
+*.ReSharper
+*.DotSettings.user
+
+# Ignore extension pack
+.vscode/extension_pack/
+
+# Windows Image file caches
+Thumbs.db
+ehthumbs.db
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
