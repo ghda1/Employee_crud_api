@@ -76,10 +76,28 @@ app.MapPost("/employees", (Employee newEmployee) =>
 app.MapPut("/employees/{id}", (Guid id, Employee updatedEmployee) =>
 {
     var employee = employees.FirstOrDefault(employee => employee.Id == id);
+
+    // check if the employee exist.
     if (employee == null)
     {
         return Results.NotFound($"Employee with this id {id} does not exists.");
     }
+
+    // check if FirstName, LastName, and Position are null/empty or not
+    if (string.IsNullOrEmpty(updatedEmployee.FirstName) ||
+    string.IsNullOrEmpty(updatedEmployee.LastName) ||
+    string.IsNullOrEmpty(updatedEmployee.Position) ||
+    string.IsNullOrEmpty(updatedEmployee.Email))
+    {
+        return Results.BadRequest("FirstName, LastName, and Position should not be null or empty.");
+    }
+
+    // check if email is valid 
+    if (!isEmail(updatedEmployee.Email))
+    {
+        return Results.BadRequest("Email should be valid.");
+    }
+
     employee.FirstName = updatedEmployee.FirstName ?? employee.FirstName;
     employee.LastName = updatedEmployee.LastName ?? employee.LastName;
     employee.Email = updatedEmployee.Email ?? employee.Email;
